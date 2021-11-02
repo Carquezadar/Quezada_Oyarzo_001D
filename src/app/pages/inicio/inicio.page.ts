@@ -26,6 +26,11 @@ export class InicioPage implements OnInit {
       name: 'Elementos', 
       redirecTo: '/elementos'
     },
+    {
+      icon: 'sunny-outline', 
+      name: 'Datos', 
+      redirecTo: '/datos'
+    },
   ]
 
   constructor(private menuController: MenuController) { }

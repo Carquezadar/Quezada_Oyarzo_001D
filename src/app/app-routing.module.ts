@@ -16,9 +16,18 @@ const routes: Routes = [
     path: 'elementos',
     loadChildren: () => import('./pages/elementos/elementos.module').then( m => m.ElementosPageModule)
   },
+
   {
-    path: 'formulario',
-    loadChildren: () => import('./pages/formulario/formulario.module').then( m => m.FormularioPageModule)
+    path: 'api',
+    loadChildren: () => import('./pages/api/api.module').then( m => m.ApiPageModule)
+  },
+  {
+    path: 'datos',
+    loadChildren: () => import('./pages/datos/datos.module').then( m => m.DatosPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./componentes/login/login.module').then( m => m.LoginPageModule)
   },
 ];
 

@@ -16,15 +16,21 @@ export class AppComponent {
   constructor() {}
 
   componentes : Componente[] =[
-    {
-      icon: 'clipboard-outline',
-      name: 'Registrarse', 
-      redirecTo: '/formulario'
-    },
+
     {
       icon: 'game-controller-outline', 
       name: 'Juegos Populares', 
       redirecTo: '/elementos'
+    },
+    {
+      icon: 'newspaper-outline', 
+      name: 'Noticias sobre Apple', 
+      redirecTo: '/api'
+    },
+    {
+      icon: 'sunny-outline', 
+      name: 'Danos tu opinion', 
+      redirecTo: '/datos'
     },
   ]
 
