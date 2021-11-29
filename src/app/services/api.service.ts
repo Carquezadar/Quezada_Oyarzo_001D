@@ -11,6 +11,6 @@ export class ApiService {
 
   getTopHeadLines(){
     return this.httpclient.get<RespuestaToHeadLines>(
-      'https://newsapi.org/v2/everything?q=apple&from=2021-10-17&to=2021-10-17&sortBy=popularity&apiKey=222677ab20de40a09ab94496ff7808a7');
+      'https://newsapi.org/v2/everything?q=fornite&apiKey=42448ed28a9840e9bc09047e656b5c05');
   }
 }

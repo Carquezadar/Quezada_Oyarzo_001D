@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import{AuthService} from '../app/services/auth.service';
 
 interface Componente{
   icon: string;
@@ -13,7 +14,7 @@ interface Componente{
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(public authservice : AuthService) {}
 
   componentes : Componente[] =[
 
@@ -24,7 +25,7 @@ export class AppComponent {
     },
     {
       icon: 'newspaper-outline', 
-      name: 'Noticias sobre Apple', 
+      name: 'Noticias sobre Juegos', 
       redirecTo: '/api'
     },
     {
@@ -34,4 +35,11 @@ export class AppComponent {
     },
   ]
 
+
+    Onlogout(){
+      this.authservice.logout();   
+    }
+
+
 }
+
